@@ -1,0 +1,53 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "#",
+    "X"
+  ],
+  "key": {
+    "#": [
+      {
+        "item": "minecraft:gold_ingot"
+      },
+      {
+        "tag": "c:ingots/gold"
+      },
+      {
+        "tag": "c:gold_ingots"
+      },
+      {
+        "tag": "forge:ingots/gold"
+      }
+    ],
+    "X": [
+      {
+        "item": "minecraft:stick"
+      },
+      {
+        "tag": "c:rods/wooden"
+      },
+      {
+        "tag": "c:wooden_rods"
+      },
+      {
+        "tag": "forge:rods/wooden"
+      }
+    ]
+  },
+  "result": {
+    "item": "flintlock:knife.gold"
+  },
+  "conditions": [
+    {
+      "type": "flintlock:config_conditional",
+      "weapon": "knife"
+    }
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "flintlock:config_conditional",
+      "weapon": "knife"
+    }
+  ]
+}

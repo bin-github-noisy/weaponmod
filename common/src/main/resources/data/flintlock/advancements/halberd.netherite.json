@@ -1,0 +1,62 @@
+{
+  "parent": "flintlock:root",
+  "rewards": {
+    "recipes": [
+      "flintlock:halberd.netherite"
+    ]
+  },
+  "criteria": {
+    "has_halberd.diamond": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "flintlock:halberd.diamond"
+            ]
+          }
+        ]
+      }
+    },
+    "has_netherite_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:netherite_ingot"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "flintlock:halberd.netherite"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_halberd.diamond",
+      "has_the_recipe"
+    ],
+    [
+      "has_netherite_ingot",
+      "has_the_recipe"
+    ]
+  ],
+  "conditions": [
+    {
+      "type": "flintlock:config_conditional",
+      "weapon": "halberd"
+    }
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "flintlock:config_conditional",
+      "weapon": "halberd"
+    }
+  ]
+}

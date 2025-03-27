@@ -1,0 +1,14 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "flintlock:item/katana.iron"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "flintlock:block": 1
+      },
+      "model": "flintlock:item/katana.iron.block"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "#",
+    "X",
+    "X"
+  ],
+  "key": {
+    "#": [
+      {
+        "item": "minecraft:iron_ingot"
+      },
+      {
+        "tag": "c:ingots/iron"
+      },
+      {
+        "tag": "c:iron_ingots"
+      },
+      {
+        "tag": "forge:ingots/iron"
+      }
+    ],
+    "X": [
+      {
+        "item": "minecraft:gunpowder"
+      },
+      {
+        "tag": "forge:gunpowder"
+      }
+    ]
+  },
+  "result": {
+    "item": "flintlock:shell",
+    "count": 2
+  },
+  "conditions": [
+    {
+      "type": "flintlock:config_conditional",
+      "weapon": "mortar"
+    }
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "flintlock:config_conditional",
+      "weapon": "mortar"
+    }
+  ]
+}

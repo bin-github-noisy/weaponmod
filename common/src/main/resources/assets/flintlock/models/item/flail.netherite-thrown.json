@@ -1,0 +1,6 @@
+{
+  "parent": "flintlock:item/flail.netherite",
+  "textures": {
+    "layer0": "flintlock:item/flail.netherite-thrown"
+  }
+}

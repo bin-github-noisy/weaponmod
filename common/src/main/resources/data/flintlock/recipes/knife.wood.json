@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "#",
+    "X"
+  ],
+  "key": {
+    "#": [
+      {
+        "tag": "minecraft:planks"
+      }
+    ],
+    "X": [
+      {
+        "item": "minecraft:stick"
+      },
+      {
+        "tag": "c:rods/wooden"
+      },
+      {
+        "tag": "c:wooden_rods"
+      },
+      {
+        "tag": "forge:rods/wooden"
+      }
+    ]
+  },
+  "result": {
+    "item": "flintlock:knife.wood"
+  },
+  "conditions": [
+    {
+      "type": "flintlock:config_conditional",
+      "weapon": "knife"
+    }
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "flintlock:config_conditional",
+      "weapon": "knife"
+    }
+  ]
+}

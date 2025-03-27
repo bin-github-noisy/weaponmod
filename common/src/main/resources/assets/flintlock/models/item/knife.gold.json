@@ -1,0 +1,6 @@
+{
+  "parent": "flintlock:item/handheld_short",
+  "textures": {
+    "layer0": "flintlock:item/knife.gold"
+  }
+}

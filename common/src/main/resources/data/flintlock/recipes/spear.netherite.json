@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "base": {
+    "item": "flintlock:spear.diamond"
+  },
+  "result": {
+    "item": "flintlock:spear.netherite"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  },
+  "conditions": [
+    {
+      "type": "flintlock:config_conditional",
+      "weapon": "spear"
+    }
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "flintlock:config_conditional",
+      "weapon": "spear"
+    }
+  ]
+}

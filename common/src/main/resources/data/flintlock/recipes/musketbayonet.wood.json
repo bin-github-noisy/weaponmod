@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "flintlock:musket"
+    },
+    {
+      "item": "flintlock:knife.wood"
+    }
+  ],
+  "result": {
+    "item": "flintlock:musketbayonet.wood"
+  },
+  "conditions": [
+    {
+      "type": "flintlock:config_conditional",
+      "weapon": "musket"
+    },
+    {
+      "type": "flintlock:config_conditional",
+      "weapon": "knife"
+    }
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "flintlock:config_conditional",
+      "weapon": "musket"
+    },
+    {
+      "condition": "flintlock:config_conditional",
+      "weapon": "knife"
+    }
+  ]
+}

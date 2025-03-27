@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "package": "bin.flintlock.fabric.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "minVersion": "0.8",
+  "client": [
+    "AbstractClientPlayerMixin",
+    "GuiMixin"
+  ],
+  "mixins": [
+    "EntityMixin",
+    "PlayerMixin"
+  ],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,14 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "flintlock:item/cannonball"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-110.39, 82.72, 177.84],
+			"translation": [0, 0, 0.25],
+			"scale": [1.5, 1.5, 1.5]
+		}
+	}
+}

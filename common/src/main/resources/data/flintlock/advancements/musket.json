@@ -1,0 +1,62 @@
+{
+  "parent": "flintlock:root",
+  "rewards": {
+    "recipes": [
+      "flintlock:musket"
+    ]
+  },
+  "criteria": {
+    "has_flintlock_musket-ironpart": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "flintlock:musket-ironpart"
+            ]
+          }
+        ]
+      }
+    },
+    "has_flintlock_gun-stock": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "flintlock:gun-stock"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "flintlock:musket"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_flintlock_musket-ironpart",
+      "has_the_recipe"
+    ],
+    [
+      "has_flintlock_gun-stock",
+      "has_the_recipe"
+    ]
+  ],
+  "conditions": [
+    {
+      "type": "flintlock:config_conditional",
+      "weapon": "musket"
+    }
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "flintlock:config_conditional",
+      "weapon": "musket"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "##X"
+  ],
+  "key": {
+    "X": [
+      {
+        "tag": "minecraft:planks"
+      }
+    ],
+    "#": [
+      {
+        "item": "minecraft:stick"
+      },
+      {
+        "tag": "c:rods/wooden"
+      },
+      {
+        "tag": "c:wooden_rods"
+      },
+      {
+        "tag": "forge:rods/wooden"
+      }
+    ]
+  },
+  "result": {
+    "item": "flintlock:gun-stock"
+  },
+  "conditions": [
+    {
+      "type": "forge:or",
+      "values": [
+        {
+          "type": "flintlock:config_conditional",
+          "weapon": "musket"
+        },
+        {
+          "type": "flintlock:config_conditional",
+          "weapon": "blunderbuss"
+        },
+        {
+          "type": "flintlock:config_conditional",
+          "weapon": "mortar"
+        }
+      ]
+    }
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:or",
+      "values": [
+        {
+          "condition": "flintlock:config_conditional",
+          "weapon": "musket"
+        },
+        {
+          "condition": "flintlock:config_conditional",
+          "weapon": "blunderbuss"
+        },
+        {
+          "condition": "flintlock:config_conditional",
+          "weapon": "mortar"
+        }
+      ]
+    }
+  ]
+}

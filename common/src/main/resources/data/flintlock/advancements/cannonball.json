@@ -1,0 +1,46 @@
+{
+  "parent": "flintlock:root",
+  "rewards": {
+    "recipes": [
+      "flintlock:cannonball"
+    ]
+  },
+  "criteria": {
+    "has_minecraft_stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:stone"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "flintlock:cannonball"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_minecraft_stone",
+      "has_the_recipe"
+    ]
+  ],
+  "conditions": [
+    {
+      "type": "flintlock:config_conditional",
+      "weapon": "cannon"
+    }
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "flintlock:config_conditional",
+      "weapon": "cannon"
+    }
+  ]
+}

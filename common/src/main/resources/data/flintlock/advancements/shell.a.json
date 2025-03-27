@@ -1,0 +1,103 @@
+{
+  "parent": "flintlock:root",
+  "rewards": {
+    "recipes": [
+      "flintlock:shell.a"
+    ]
+  },
+  "criteria": {
+    "has_minecraft_iron_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:iron_ingot"
+            ]
+          }
+        ]
+      }
+    },
+    "has_c_ingots/iron": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "c:ingots/iron"
+          }
+        ]
+      }
+    },
+    "has_c_iron_ingots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "c:iron_ingots"
+          }
+        ]
+      }
+    },
+    "has_forge_ingots/iron": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:ingots/iron"
+          }
+        ]
+      }
+    },
+    "has_flintlock_dynamite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "flintlock:dynamite"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "flintlock:shell.a"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_minecraft_iron_ingot",
+      "has_c_ingots/iron",
+      "has_c_iron_ingots",
+      "has_forge_ingots/iron",
+      "has_the_recipe"
+    ],
+    [
+      "has_flintlock_dynamite",
+      "has_the_recipe"
+    ]
+  ],
+  "conditions": [
+    {
+      "type": "flintlock:config_conditional",
+      "weapon": "mortar"
+    },
+    {
+      "type": "flintlock:config_conditional",
+      "weapon": "dynamite"
+    }
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "flintlock:config_conditional",
+      "weapon": "mortar"
+    },
+    {
+      "condition": "flintlock:config_conditional",
+      "weapon": "dynamite"
+    }
+  ]
+}

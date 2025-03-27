@@ -1,0 +1,61 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "XXH",
+    " #O"
+  ],
+  "key": {
+    "O": [
+      {
+        "tag": "flintlock:gun-stock"
+      }
+    ],
+    "#": [
+      {
+        "item": "minecraft:stick"
+      },
+      {
+        "tag": "c:rods/wooden"
+      },
+      {
+        "tag": "c:wooden_rods"
+      },
+      {
+        "tag": "forge:rods/wooden"
+      }
+    ],
+    "X": [
+      {
+        "item": "minecraft:iron_ingot"
+      },
+      {
+        "tag": "c:ingots/iron"
+      },
+      {
+        "tag": "c:iron_ingots"
+      },
+      {
+        "tag": "forge:ingots/iron"
+      }
+    ],
+    "H": {
+      "item": "minecraft:flint_and_steel"
+    }
+  },
+  "result": {
+    "item": "flintlock:carbine"
+  },
+  "conditions": [
+    {
+      "type": "flintlock:config_conditional",
+      "weapon": "carbine"
+    }
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "flintlock:config_conditional",
+      "weapon": "carbine"
+    }
+  ]
+}

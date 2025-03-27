@@ -1,0 +1,62 @@
+{
+  "parent": "flintlock:root",
+  "rewards": {
+    "recipes": [
+      "flintlock:mortar"
+    ]
+  },
+  "criteria": {
+    "has_flintlock_mortar-ironpart": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "flintlock:mortar-ironpart"
+            ]
+          }
+        ]
+      }
+    },
+    "has_flintlock_gun-stock": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "flintlock:gun-stock"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "flintlock:mortar"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_flintlock_mortar-ironpart",
+      "has_the_recipe"
+    ],
+    [
+      "has_flintlock_gun-stock",
+      "has_the_recipe"
+    ]
+  ],
+  "conditions": [
+    {
+      "type": "flintlock:config_conditional",
+      "weapon": "mortar"
+    }
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "flintlock:config_conditional",
+      "weapon": "mortar"
+    }
+  ]
+}

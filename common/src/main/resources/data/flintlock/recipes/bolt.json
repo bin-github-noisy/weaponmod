@@ -1,0 +1,51 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "#",
+    "X"
+  ],
+  "key": {
+    "#": [
+      {
+        "item": "minecraft:iron_ingot"
+      },
+      {
+        "tag": "c:ingots/iron"
+      },
+      {
+        "tag": "c:iron_ingots"
+      },
+      {
+        "tag": "forge:ingots/iron"
+      }
+    ],
+    "X": [
+      {
+        "item": "minecraft:feather"
+      },
+      {
+        "tag": "c:feathers"
+      },
+      {
+        "tag": "forge:feathers"
+      }
+    ]
+  },
+  "result": {
+    "item": "flintlock:bolt",
+    "count": 4
+  },
+  "conditions": [
+    {
+      "type": "flintlock:config_conditional",
+      "weapon": "crossbow"
+    }
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "flintlock:config_conditional",
+      "weapon": "crossbow"
+    }
+  ]
+}

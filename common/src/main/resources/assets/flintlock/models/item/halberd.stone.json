@@ -1,0 +1,50 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "flintlock:item/halberd.stone"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        20,
+        -90,
+        55
+      ],
+      "translation": [
+        0,
+        3.0,
+        2.0
+      ],
+      "scale": [
+        1.7,
+        1.7,
+        1.7
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        20,
+        90,
+        -55
+      ],
+      "translation": [
+        0,
+        3.0,
+        2.0
+      ],
+      "scale": [
+        1.7,
+        1.7,
+        1.7
+      ]
+    }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "flintlock:halberd-state": 1
+      },
+      "model": "flintlock:item/halberd.stone_state"
+    }
+  ]
+}

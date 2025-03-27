@@ -1,0 +1,70 @@
+{
+  "parent": "flintlock:root",
+  "rewards": {
+    "recipes": [
+      "flintlock:musketbayonet.stone"
+    ]
+  },
+  "criteria": {
+    "has_musket": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "flintlock:musket"
+            ]
+          }
+        ]
+      }
+    },
+    "has_knife.stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "flintlock:knife.stone"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "flintlock:musketbayonet.stone"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_musket",
+      "has_the_recipe"
+    ],
+    [
+      "has_knife.stone",
+      "has_the_recipe"
+    ]
+  ],
+  "conditions": [
+    {
+      "type": "flintlock:config_conditional",
+      "weapon": "musket"
+    },
+    {
+      "type": "flintlock:config_conditional",
+      "weapon": "knife"
+    }
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "flintlock:config_conditional",
+      "weapon": "musket"
+    },
+    {
+      "condition": "flintlock:config_conditional",
+      "weapon": "knife"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " X ",
+    "H#H",
+    " O "
+  ],
+  "key": {
+    "X": {
+      "tag": "minecraft:wool"
+    },
+    "#": {
+      "item": "minecraft:leather_chestplate"
+    },
+    "O": [
+      {
+        "item": "minecraft:stick"
+      },
+      {
+        "tag": "c:rods/wooden"
+      },
+      {
+        "tag": "c:wooden_rods"
+      },
+      {
+        "tag": "forge:rods/wooden"
+      }
+    ],
+    "H": [
+      {
+        "item": "minecraft:wheat"
+      },
+      {
+        "tag": "c:grain"
+      },
+      {
+        "tag": "forge:crops/wheat"
+      }
+    ]
+  },
+  "result": {
+    "item": "flintlock:dummy"
+  },
+  "conditions": [
+    {
+      "type": "flintlock:config_conditional",
+      "weapon": "dummy"
+    }
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "flintlock:config_conditional",
+      "weapon": "dummy"
+    }
+  ]
+}

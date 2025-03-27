@@ -1,0 +1,44 @@
+{
+  "parent": "flintlock:item/musket",
+  "textures": {
+		"1": "flintlock:item/musket_shook",
+		"6": "flintlock:item/musket",
+		"particle": "flintlock:item/musket_shook"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        40,
+        -40,
+        65
+      ],
+      "translation": [
+        -2.5,
+        2.0,
+        1.2
+      ],
+      "scale": [
+        0.85,
+        0.85,
+        0.85
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        40,
+        140,
+        -65
+      ],
+      "translation": [
+        -2.5,
+        2.0,
+        1.2
+      ],
+      "scale": [
+        0.85,
+        0.85,
+        0.85
+      ]
+    }
+  }
+}

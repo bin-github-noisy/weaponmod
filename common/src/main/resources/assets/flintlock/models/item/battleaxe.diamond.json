@@ -1,0 +1,14 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "flintlock:item/battleaxe.diamond"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "flintlock:block": 1
+      },
+      "model": "flintlock:item/battleaxe.diamond.block"
+    }
+  ]
+}

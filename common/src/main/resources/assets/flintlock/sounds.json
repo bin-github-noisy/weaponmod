@@ -1,0 +1,18 @@
+{
+  "musket_fire": {
+    "subtitle": "flintlock.subtitle.musket_fire",
+    "sounds": [ "flintlock:musket_fire" ]
+  },
+  "flintlock_fire": {
+    "subtitle": "flintlock.subtitle.flintlock_fire",
+    "sounds": [ "flintlock:musket_fire" ]
+  },
+  "blunderbuss_fire": {
+    "subtitle": "flintlock.subtitle.blunderbuss_fire",
+    "sounds": [ "flintlock:blunderbuss_fire" ]
+  },
+  "reload": {
+    "subtitle": "flintlock.subtitle.reload",
+    "sounds": [ "flintlock:musket_load0" ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "flintlock:item/handheld_rod",
+  "textures": {
+    "layer0": "flintlock:item/dynamite"
+  }
+}

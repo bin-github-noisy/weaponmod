@@ -1,0 +1,14 @@
+{
+  "parent": "flintlock:item/handheld_rod",
+  "textures": {
+    "layer0": "flintlock:item/flail.stone"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "flintlock:flail-thrown": 1
+      },
+      "model": "flintlock:item/flail.stone-thrown"
+    }
+  ]
+}

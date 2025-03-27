@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "ingredient": [
+    {
+      "item": "flintlock:spear.iron"
+    },
+    {
+      "item": "flintlock:halberd.iron"
+    },
+    {
+      "item": "flintlock:knife.iron"
+    },
+    {
+      "item": "flintlock:battleaxe.iron"
+    },
+    {
+      "item": "flintlock:warhammer.iron"
+    },
+    {
+      "item": "flintlock:flail.iron"
+    },
+    {
+      "item": "flintlock:boomerang.iron"
+    },
+    {
+      "item": "flintlock:katana.iron"
+    }
+  ],
+  "result": "minecraft:iron_nugget",
+  "experience": 0.1,
+  "cookingtime": 100
+}

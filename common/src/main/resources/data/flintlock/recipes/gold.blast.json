@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "ingredient": [
+    {
+      "item": "flintlock:spear.gold"
+    },
+    {
+      "item": "flintlock:halberd.gold"
+    },
+    {
+      "item": "flintlock:knife.gold"
+    },
+    {
+      "item": "flintlock:battleaxe.gold"
+    },
+    {
+      "item": "flintlock:warhammer.gold"
+    },
+    {
+      "item": "flintlock:flail.gold"
+    },
+    {
+      "item": "flintlock:boomerang.gold"
+    },
+    {
+      "item": "flintlock:katana.gold"
+    }
+  ],
+  "result": "minecraft:gold_nugget",
+  "experience": 0.1,
+  "cookingtime": 100
+}

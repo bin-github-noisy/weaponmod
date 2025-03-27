@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "XX#",
+    "  X",
+    "  X"
+  ],
+  "key": {
+    "X": [
+      {
+        "tag": "minecraft:planks"
+      }
+    ],
+    "#": [
+      {
+        "item": "minecraft:diamond"
+      },
+      {
+        "tag": "c:diamonds"
+      },
+      {
+        "tag": "forge:gems/diamond"
+      }
+    ]
+  },
+  "result": {
+    "item": "flintlock:boomerang.diamond"
+  },
+  "conditions": [
+    {
+      "type": "flintlock:config_conditional",
+      "weapon": "boomerang"
+    }
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "flintlock:config_conditional",
+      "weapon": "boomerang"
+    }
+  ]
+}

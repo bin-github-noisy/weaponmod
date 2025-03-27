@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "#",
+    "X",
+    "O"
+  ],
+  "key": {
+    "#": [
+      {
+        "item": "minecraft:gravel"
+      },
+      {
+        "tag": "c:gravel"
+      },
+      {
+        "tag": "c:gravels"
+      },
+      {
+        "tag": "forge:gravel"
+      }
+    ],
+    "X": [
+      {
+        "item": "minecraft:gunpowder"
+      },
+      {
+        "tag": "forge:gunpowder"
+      }
+    ],
+    "O": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "item": "flintlock:shot",
+    "count": 8
+  },
+  "conditions": [
+    {
+      "type": "flintlock:config_conditional",
+      "weapon": "blunderbuss"
+    }
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "flintlock:config_conditional",
+      "weapon": "blunderbuss"
+    }
+  ]
+}

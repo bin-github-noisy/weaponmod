@@ -1,0 +1,14 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "flintlock:item/boomerang.wood"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "flintlock:boomerang-ready": 1
+      },
+      "model": "flintlock:item/boomerang.wood_ready"
+    }
+  ]
+}

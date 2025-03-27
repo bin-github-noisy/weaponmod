@@ -1,0 +1,6 @@
+{
+  "parent": "flintlock:item/handheld_block",
+  "textures": {
+    "layer0": "flintlock:item/boomerang.iron"
+  }
+}

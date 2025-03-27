@@ -1,0 +1,62 @@
+{
+  "parent": "flintlock:root",
+  "rewards": {
+    "recipes": [
+      "flintlock:blunderbuss"
+    ]
+  },
+  "criteria": {
+    "has_flintlock_blunder-ironpart": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "flintlock:blunder-ironpart"
+            ]
+          }
+        ]
+      }
+    },
+    "has_flintlock_gun-stock": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "flintlock:gun-stock"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "flintlock:blunderbuss"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_flintlock_blunder-ironpart",
+      "has_the_recipe"
+    ],
+    [
+      "has_flintlock_gun-stock",
+      "has_the_recipe"
+    ]
+  ],
+  "conditions": [
+    {
+      "type": "flintlock:config_conditional",
+      "weapon": "blunderbuss"
+    }
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "flintlock:config_conditional",
+      "weapon": "blunderbuss"
+    }
+  ]
+}

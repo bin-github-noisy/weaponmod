@@ -1,0 +1,6 @@
+{
+  "parent": "flintlock:item/flail.diamond",
+  "textures": {
+    "layer0": "flintlock:item/flail-thrown"
+  }
+}

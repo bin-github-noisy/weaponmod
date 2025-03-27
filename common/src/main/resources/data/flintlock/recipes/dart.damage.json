@@ -1,0 +1,55 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "#",
+    "O",
+    "X"
+  ],
+  "key": {
+    "#": [
+      {
+        "item": "minecraft:stick"
+      },
+      {
+        "tag": "c:rods/wooden"
+      },
+      {
+        "tag": "c:wooden_rods"
+      },
+      {
+        "tag": "forge:rods/wooden"
+      }
+    ],
+    "X": [
+      {
+        "item": "minecraft:feather"
+      },
+      {
+        "tag": "c:feathers"
+      },
+      {
+        "tag": "forge:feathers"
+      }
+    ],
+    "O": {
+      "item": "minecraft:spider_eye"
+    }
+  },
+  "result": {
+    "item": "flintlock:dart.damage",
+    "count": 4
+  },
+  "conditions": [
+    {
+      "type": "flintlock:config_conditional",
+      "weapon": "blowgun"
+    }
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "flintlock:config_conditional",
+      "weapon": "blowgun"
+    }
+  ]
+}

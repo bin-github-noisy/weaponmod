@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "X",
+    "#A"
+  ],
+  "key": {
+    "X": {
+      "item": "flintlock:musket-ironpart"
+    },
+    "#": {
+      "item": "flintlock:gun-stock"
+    }
+  },
+    "A": {
+      "item": "minecraft:glass_bottle"
+    },
+  "result": {
+    "item": "flintlock:air_rifle"
+  },
+  "conditions": [
+    {
+      "type": "flintlock:config_conditional",
+      "weapon": "air_rifle"
+    }
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "flintlock:config_conditional",
+      "weapon": "air_rifle"
+    }
+  ]
+}
